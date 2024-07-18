@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def hod_home(request):
-    return HttpResponse("Welcome to the HOD section.")
+    return render(request, 'index.html')
